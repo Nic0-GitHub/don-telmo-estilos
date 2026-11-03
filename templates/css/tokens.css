@@ -1,0 +1,65 @@
+/* Tokens iniciales portables. Valores de marca basados en sistemas existentes; ver docs/identidad-visual.md. */
+:root {
+  color-scheme: light;
+  --dt-brand-orange: #cf4624;
+  --dt-brand-orange-crm: #e4512f;
+  --dt-brand-red: #8d2114;
+  --dt-color-primary: var(--dt-brand-orange);
+  --dt-color-on-primary: #ffffff;
+  --dt-color-primary-hover: #bb3427;
+  --dt-color-bg: #fbf8f5;
+  --dt-color-surface: #ffffff;
+  --dt-color-surface-muted: #f5efea;
+  --dt-color-text: #49423c;
+  --dt-color-text-muted: #766c63;
+  --dt-color-border: #ded5cc;
+  --dt-color-border-strong: #bdb1a6;
+  --dt-color-success: #2f9767;
+  --dt-color-warning: #b8781e;
+  --dt-color-danger: #c84c45;
+  --dt-color-info: #4c82b5;
+  --dt-font-sans: Inter, Rubik, "Segoe UI", sans-serif;
+  --dt-radius-control: .7rem;
+  --dt-radius-card: 1rem;
+  --dt-radius-pill: 999px;
+  --dt-space-1: .25rem;
+  --dt-space-2: .5rem;
+  --dt-space-3: .75rem;
+  --dt-space-4: 1rem;
+  --dt-space-5: 1.25rem;
+  --dt-shadow-card: 0 .125rem .25rem rgb(73 61 51 / .05), 0 .5rem 1.5rem rgb(73 61 51 / .04);
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --dt-color-primary: #f06b4b;
+  --dt-color-primary-hover: #e87863;
+  --dt-color-bg: #202225;
+  --dt-color-surface: #2a2d31;
+  --dt-color-surface-muted: #363a3f;
+  --dt-color-text: #eef0f2;
+  --dt-color-text-muted: #b7bdc4;
+  --dt-color-border: #4a4f55;
+  --dt-color-border-strong: #6a7178;
+  --dt-color-success: #55c98d;
+  --dt-color-warning: #f0b85c;
+  --dt-color-danger: #f77d75;
+  --dt-color-info: #7eb4eb;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    color-scheme: dark;
+    --dt-color-primary: #f06b4b;
+    --dt-color-primary-hover: #e87863;
+    --dt-color-bg: #202225;
+    --dt-color-surface: #2a2d31;
+    --dt-color-surface-muted: #363a3f;
+    --dt-color-text: #eef0f2;
+    --dt-color-text-muted: #b7bdc4;
+    --dt-color-border: #4a4f55;
+    --dt-color-border-strong: #6a7178;
+    --dt-color-success: #55c98d;
+    --dt-color-warning: #f0b85c;
+    --dt-color-danger: #f77d75;
+    --dt-color-info: #7eb4eb;
+  }
+}
