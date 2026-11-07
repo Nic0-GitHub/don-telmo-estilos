@@ -14,6 +14,14 @@
 - Proveer control de cierre visible y permitir Escape cuando corresponda.
 - Al abrir, mover el foco al diálogo; al cerrar, devolverlo al elemento que lo abrió. En móvil, respetar áreas seguras y evitar que el teclado tape la acción principal.
 
+## Selectores
+
+- Mantener espacio visible entre el texto, la flecha y el borde derecho. Reservar al menos `2.75rem` de padding al final del control y dejar la flecha aproximadamente a `0.75rem` del borde.
+- Usar el token semántico de texto secundario para la flecha y los tokens de superficie, borde y foco para el control; contemplar tema claro, oscuro, hover, foco y deshabilitado.
+- Si se dibuja una flecha propia, ocultar solo la flecha nativa del `<select>` simple; conservar el comportamiento nativo de teclado y las opciones del navegador. Los selectores múltiples y las listas con `size` conservan su presentación de lista.
+- La flecha es decorativa: no debe reemplazar el nombre accesible, la etiqueta ni el foco visible del control.
+- Evitar que un `background` abreviado de estilos locales borre la flecha común. Preferir `background-color` o volver a aplicar el patrón compartido.
+
 ## Gráficos y períodos
 
 - Los gráficos con datos temporales deben ofrecer períodos seleccionables cuando los datos y el objetivo lo permitan (por ejemplo: semana, mes, trimestre, año o rango personalizado).

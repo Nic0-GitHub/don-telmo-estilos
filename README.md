@@ -8,6 +8,7 @@ Repositorio de referencia para identidad visual, tokens, patrones de interfaz y 
 - `docs/arquitectura-ui.md`: modularidad, composición y contratos de componentes.
 - `docs/uso-del-sistema.md`: cómo adoptar y extender los tokens.
 - `templates/css/`: punto de partida portable con variables CSS y temas.
+- `templates/css/controls.css`: patrón base de controles nativos, incluidos selectores con espacio uniforme para la flecha.
 - `skills/don-telmo-ui/SKILL.md`: guía operativa para implementar interfaces en los sistemas.
 
 ## Estado de la información

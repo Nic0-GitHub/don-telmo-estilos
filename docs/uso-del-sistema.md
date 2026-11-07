@@ -3,10 +3,11 @@
 ## Adopción
 
 1. Importar `templates/css/tokens.css` en la capa global de estilos.
-2. Aplicar primero tokens semánticos; agregar tokens específicos solo si existe un patrón compartido.
-3. Seleccionar tema con `data-theme="light"` o `data-theme="dark"` en la raíz, o dejar que el sistema operativo indique el tema.
-4. Los componentes consumen `var(--dt-...)`; no duplicar valores de marca en estilos locales.
-5. Extender con alias del framework cuando haga falta, sin cambiar la fuente semántica.
+2. Importar `templates/css/controls.css` después de los tokens para aplicar el patrón compartido a controles nativos.
+3. Aplicar primero tokens semánticos; agregar tokens específicos solo si existe un patrón compartido.
+4. Seleccionar tema con `data-theme="light"` o `data-theme="dark"` en la raíz, o dejar que el sistema operativo indique el tema.
+5. Los componentes consumen `var(--dt-...)`; no duplicar valores de marca en estilos locales.
+6. Extender con alias del framework cuando haga falta, sin cambiar la fuente semántica.
 
 ## Cambios
 

@@ -31,6 +31,13 @@ CRM ofrece claro y oscuro mediante `html.crm-dark`. En claro: fondo `#fbf8f5`, s
 - CRM: tarjetas con borde, superficie y sombra; hover eleva la tarjeta interactiva `2px`.
 - CRM: botón primario naranja; al hover/focus pasa a negro con texto blanco. Documentar esta interacción como patrón observado y validar si será estándar compartido.
 
+## Variantes y tamaño de logotipos
+
+- Elegir la variante de marca aprobada para el fondo y el tema activo; no reemplazar el recurso correcto por una variante con contraste inadecuado.
+- Mantener una caja de presentación coherente entre temas y tamaños de pantalla, preservando las proporciones del arte.
+- Revisar los límites visibles del recurso: algunos SVG incluyen margen vacío dentro de su `viewBox`. Normalizar ese espacio con recorte del contenedor o posición del objeto, sin deformar el logotipo.
+- Evitar variantes rasterizadas con un fondo blanco sobre superficies oscuras. Validar contraste y tamaño visual tanto en claro como en oscuro, en escritorio y móvil.
+
 ## Estado y datos
 
 CRM distingue éxito, aviso, peligro e información con tonos separados y superficies suaves; conservar diferencias de significado en ambos temas. Gráficos deben usar una paleta categórica accesible y consistente con estados, con leyendas legibles; los colores de series no deben codificar estado operativo salvo que esa sea la intención del dato.
